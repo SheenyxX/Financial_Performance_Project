@@ -54,6 +54,16 @@ The data structure follows a star schema design for optimal query performance:
 
 This enterprise-grade data architecture enables the complex analysis presented in this dashboard suite while maintaining flexibility for future enhancements.
 
+
+### Data Model  
+![Data Architecture](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/5%20Data%20Model.png)  
+*Tables*:  
+- `General Ledger` (27,910 transactions)  
+- `Chart of Accounts` (55 hierarchical accounts)  
+- `Territory` (7 regions)  
+- `Calendar` (1,097 days)  
+
+
 ---
 
 ## 📊 Dashboard Walkthrough  
@@ -181,13 +191,6 @@ Marketing_Cost_FTP = CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass2] = "Ma
 EBITDA = [GrossProfit] + CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass] = "Operating Expenses")  // Cash flow proxy
 ```
 
-### Data Model  
-![Data Architecture](images/data_model.png)  
-*Tables*:  
-- `General Ledger` (27,910 transactions)  
-- `Chart of Accounts` (55 hierarchical accounts)  
-- `Territory` (7 regions)  
-- `Calendar` (1,097 days)  
 
 ---
 
