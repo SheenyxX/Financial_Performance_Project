@@ -59,7 +59,7 @@ This enterprise-grade data architecture enables the complex analysis presented i
 ## 📊 Dashboard Walkthrough  
 
 ### 1. Revenue Pulse  
-![Revenue Dashboard](images/revenue_dash.png)  
+![Revenue Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1%20Dashboard%20Sales.png)  
 **What We See**:  
 - **Your Note**: "Q3/Q4 consistently outperform, with 2020 growth despite Q1 dip"  
 - **Key Metric**:  
