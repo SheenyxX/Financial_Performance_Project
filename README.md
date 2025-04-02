@@ -72,7 +72,7 @@ This enterprise-grade data architecture enables the complex analysis presented i
 ---
 
 ### 2. Profit & Loss Deep Dive  
-![P&L Dashboard](images/pl_dash.png)  
+![P&L Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2%20Dashboard%20P%26L.png)  
 **What We See**:  
 - **Your Note**: "2020 net profit struggled vs 2019 despite higher sales"  
 - **Key Metrics**:  
