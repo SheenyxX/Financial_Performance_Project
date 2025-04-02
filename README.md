@@ -15,6 +15,47 @@ NorthWind Traders faced declining profitability in European markets despite 12% 
 
 ---
 
+## 🌐 Data Organization & Structure
+Modern enterprises like NorthWind Traders organize financial data into **4 core datasets**, optimized for ERP integration and BI tools like Power BI:
+
+### 1. **Transactional Data** (`GL.xlsx`)  
+- **What It Contains**: Every financial transaction (debits/credits) with metadata:  
+  - *Account Codes* (e.g., `230` for Cost of Sales)  
+  - *Timestamps* (date of transaction)  
+  - *Geographic Tags* (Territory keys)
+  - *Amount* (transaction value)
+- **Volume**: 27,910+ transactions spanning 3 years
+- **Typical Use**: Foundation for P&L statements, balance sheets, and cash flow analysis
+
+### 2. **Master Data** (`Chart of Accounts.xlsx`)  
+- **What It Contains**: Hierarchical mapping of accounts with multi-level classification:
+  - **Level 1**: Report Type (Balance Sheet, Profit & Loss)
+  - **Level 2**: Class (Trading, Operating, Non-operating)
+  - **Level 3**: SubClass (Sales, COGS, Marketing, etc.)
+  - **Level 4**: SubClass2 (Detailed categorization)
+- **Corporate Standard**: Follows FASB/IFRS compliance structures used by SAP/Oracle
+
+### 3. **Dimensional Data** (`Territory.xlsx`, `Calendar.xlsx`)  
+- **Territory**: Geographic segmentation with 7 regions:
+  - North America: USA, Canada
+  - Europe: UK, France, Germany
+  - Asia-Pacific: Australia, New Zealand
+- **Calendar**: 3-year fiscal periods (1,097 days):
+  - Year → Quarter → Month → Day
+  - Special flags for fiscal year boundaries
+- **Why It Matters**: Enables multi-dimensional analysis across time/region
+
+### 4. **Relational Model**  
+The data structure follows a star schema design for optimal query performance:
+- Central fact table (`General Ledger`) connected to three dimension tables
+- One-to-many relationships from dimensions to transactions
+- No direct relationships between dimension tables to prevent circular dependencies
+- Optimized for both aggregation (summaries) and drilling down to transaction details
+
+This enterprise-grade data architecture enables the complex analysis presented in this dashboard suite while maintaining flexibility for future enhancements.
+
+---
+
 ## 📊 Dashboard Walkthrough  
 
 ### 1. Revenue Pulse  
@@ -112,10 +153,3 @@ EBITDA = [GrossProfit] + CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass] = 
      ```  
 
 ---
-
-## 📅 Next Steps  
-| Task                  | Owner       | Deadline   |  
-|-----------------------|-------------|------------|  
-| UK warehouse RFP      | Supply Chain| Mar 30     |  
-| France ops case study | COO         | Apr 15     |  
-| Q1 promo campaign     | Marketing   | Dec 1      |
