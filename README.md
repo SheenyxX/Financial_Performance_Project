@@ -22,7 +22,7 @@ NorthWind Traders faced declining profitability in European markets despite 36% 
 Modern enterprises like NorthWind Traders organize financial data into **4 core datasets**, optimized for ERP integration and BI tools like Power BI:
 
 ### 1. **Master Data** (`Chart of Accounts.xlsx`)  
-![COA_Hierarchy]()  
+![COA_Hierarchy](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2.1%20COA.png)  
 *Hierarchical account structure in Excel*  
 
 - **Multi-level Classification**:  
@@ -35,7 +35,7 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
 - **Compliance**: FASB/IFRS standards compatible with SAP/Oracle  
 
 ### 2. **Transactional Data** (`GL.xlsx`)  
-![GL_Transactions]()  
+![GL_Transactions](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2.2%20GL.png)  
 *Example of raw transaction records with metadata*  
 
 - **What It Contains**: Every financial transaction (debits/credits) with metadata:  
