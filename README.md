@@ -19,7 +19,7 @@ NorthWind Traders faced declining profitability in European markets despite 12% 
 Modern enterprises like NorthWind Traders organize financial data into **4 core datasets**, optimized for ERP integration and BI tools like Power BI:
 
 ### 1. **Transactional Data** (`GL.xlsx`)  
-![GL_Transactions](https://via.placeholder.com/600x200?text=Sample+General+Ledger+Transactions+with+Account+Codes+Timestamps+Amounts)  
+![GL_Transactions](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/GL.png)  
 *Example of raw transaction records with metadata*  
 
 - **What It Contains**: Every financial transaction (debits/credits) with metadata:  
@@ -30,7 +30,7 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
 - **Volume**: 27,910+ transactions spanning 3 years  
 
 ### 2. **Master Data** (`Chart of Accounts.xlsx`)  
-![COA_Hierarchy](https://via.placeholder.com/600x150?text=Chart+of+Accounts+Hierarchy+with+Level1-Level4+Classification)  
+![COA_Hierarchy](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/COA.png)  
 *Hierarchical account structure in Excel*  
 
 - **Multi-level Classification**:  
@@ -44,11 +44,11 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
 
 ### 3. **Dimensional Data**  
 #### Territory Table  
-![Territory_Table](https://via.placeholder.com/600x100?text=Territory+Table+with+Region+Country+Market+Tags)  
+![Territory_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Territory.png)  
 - **7 Regions**: North America (USA, Canada), Europe (UK, France, Germany), etc.  
 
 #### Calendar Table  
-![Calendar_Table](https://via.placeholder.com/600x150?text=Fiscal+Calendar+with+Year+Quarter+Month+Day+Hierarchy)  
+![Calendar_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Calender.png)  
 - **Fiscal Periods**: 1,097 days with special flags for year-end  
 
 ### 4. **Relational Model**  
