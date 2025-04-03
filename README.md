@@ -21,19 +21,8 @@ NorthWind Traders faced declining profitability in European markets despite 36% 
 
 Modern enterprises like NorthWind Traders organize financial data into **4 core datasets**, optimized for ERP integration and BI tools like Power BI:
 
-### 1. **Transactional Data** (`GL.xlsx`)  
-![GL_Transactions](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/GL.png)  
-*Example of raw transaction records with metadata*  
-
-- **What It Contains**: Every financial transaction (debits/credits) with metadata:  
-  - *Account Codes* (e.g., `230` for Cost of Sales)  
-  - *Timestamps* (date of transaction)  
-  - *Geographic Tags* (Territory keys)  
-  - *Amount* (transaction value)  
-- **Volume**: 27,910+ transactions spanning 3 years  
-
-### 2. **Master Data** (`Chart of Accounts.xlsx`)  
-![COA_Hierarchy](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/COA.png)  
+### 1. **Master Data** (`Chart of Accounts.xlsx`)  
+![COA_Hierarchy]()  
 *Hierarchical account structure in Excel*  
 
 - **Multi-level Classification**:  
@@ -45,14 +34,27 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
   ```  
 - **Compliance**: FASB/IFRS standards compatible with SAP/Oracle  
 
+### 2. **Transactional Data** (`GL.xlsx`)  
+![GL_Transactions]()  
+*Example of raw transaction records with metadata*  
+
+- **What It Contains**: Every financial transaction (debits/credits) with metadata:  
+  - *Account Codes* (e.g., `230` for Cost of Sales)  
+  - *Timestamps* (date of transaction)  
+  - *Geographic Tags* (Territory keys)  
+  - *Amount* (transaction value)  
+- **Volume**: 27,910+ transactions spanning 3 years  
+
+
 ### 3. **Dimensional Data**  
-#### Territory Table  
-![Territory_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Territory.png)  
-- **7 Regions**: North America (USA, Canada), Europe (UK, France, Germany), etc.  
 
 #### Calendar Table  
 ![Calendar_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Calender.png)  
-- **Fiscal Periods**: 1,097 days with special flags for year-end  
+- **Fiscal Periods**: 1,097 days with special flags for year-end
+- 
+#### Territory Table  
+![Territory_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Territory.png)  
+- **7 Regions**: North America (USA, Canada), Europe (UK, France, Germany), etc.  
 
 ### 4. **Relational Model**  
 The data structure follows a star schema design for optimal query performance:
