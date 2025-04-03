@@ -3,12 +3,14 @@
 
 ## 🔍 Executive Summary  
 **Business Challenge**:  
-NorthWind Traders faced declining profitability in European markets despite 12% revenue growth in 2020. Using 27,910+ GL transactions, we identified:  
+
+NorthWind Traders faced declining profitability in European markets despite 36% sales revenue growth in 2020 compared with previous year. Using 27,910+ GL transactions, we identified:  
 - **Q1 2020 Net Profit Crash**: -$45K (linked to marketing overspend and UK tax changes)  
-- **Hidden Star Market**: France's **22% net margins** (vs Germany's 14%)  
-- **Seasonal Cash Flow Gaps**: 68% of annual profit concentrated in Q3/Q4  
+- **Hidden Star Market**: France's **net profit outperformed germany's by 17% more** 
+- **Seasonal Cash Flow Gaps**: 66% of annual profit concentrated in Q3/Q4  
 
 **Solution**: Power BI dashboard suite with 10 critical DAX measures to track:  
+
 ✔️ Real-time profitability by region  
 ✔️ Marketing spend ROI alerts  
 ✔️ Cost leakage detection  
@@ -16,6 +18,7 @@ NorthWind Traders faced declining profitability in European markets despite 12% 
 ---
 
 ## 🌐 Data Organization & Structure
+
 Modern enterprises like NorthWind Traders organize financial data into **4 core datasets**, optimized for ERP integration and BI tools like Power BI:
 
 ### 1. **Transactional Data** (`GL.xlsx`)  
@@ -91,7 +94,7 @@ Sales_FTP = CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass] = "Sales")  // 
 
 **Insights**:  
 - Q3/Q4 consistently outperform Q1/Q2 across all years
-- Q4 2020 sales peaked at **$4.1M** (vs $3.2M in 2019)
+- Q4 2020 sales peaked at **$1.4M** (vs $1.04M in 2019)
 - January slumps average **-38%** vs December across all years
 - Despite global economic challenges, 2020 showed overall growth with only a temporary Q1 dip
 
@@ -116,8 +119,7 @@ Net_Profit = CALCULATE([Total_FTP], 'Chart of Accounts'[Report] = "Profit and Lo
 **Insights**:  
 - 2020 net profit margin dropped to **16.46%** (vs. 22.87% in 2019)
 - Q1 2020 net profit was **negative (-$45,942)**
-- Operating costs grew **2.3x faster** than revenue
-- Germany's tax burden = **28%** of net profit vs France's 19%
+- In the first interval, operating costs grew 0.78x slower than revenue, while in the second interval, operating costs grew 1.54x faster than revenue, indicating a shift where costs began outpacing revenue growth
 
 ---
 
@@ -178,12 +180,15 @@ PBIT = [Operating_Profit] + CALCULATE([Total_FTP], 'Chart of Accounts'[Class] = 
 Total_FTP = SUM('General Ledger'[Amount])  // Core transactional sum
 Sales_FTP = CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass] = "Sales")  // Revenue isolation
 
+
 // Profitability
 GrossProfit = CALCULATE([Total_FTP], 'Chart of Accounts'[Class] = "Trading account")  
 GrossProfit_Margin = DIVIDE([GrossProfit], [Sales_FTP], 0)  // Margin analysis
 
 Net_Profit = CALCULATE([Total_FTP], 'Chart of Accounts'[Report] = "Profit and Loss")  
 NetProfit_Margin = DIVIDE([Net_Profit], [Sales_FTP], 0)  // Bottom-line efficiency
+
+
 
 // Cost & Operations
 Operating_Profit = CALCULATE([Total_FTP], 
