@@ -1,16 +1,26 @@
-# GlobalTrade Analytics: Financial Performance Suite  
+# Financial Performance Analysis: Diagnosing Profitability Gaps in European Distribution Markets  
 *Prepared for: NorthWind Traders (Multinational Distributor)*  
 
 ## 🔍 Executive Summary  
-**Business Challenge**:  
 
-NorthWind Traders faced declining profitability in European markets despite 36% sales revenue growth in 2020 compared with previous year. Using 27,910+ GL transactions, we identified:  
-- **Q1 2020 Net Profit Crash**: -$45K (linked to marketing overspend and UK tax changes)  
-- **Hidden Star Market**: France's **net profit outperformed germany's by 17% more** 
-- **Seasonal Cash Flow Gaps**: 66% of annual profit concentrated in Q3/Q4  
+### The Financial Paradox  
+NorthWind Traders achieved **36% sales growth in 2020** while European profitability declined. Analysis of **27,910+ GL transactions** revealed:  
+
+**Critical Financial Findings**:  
+1. **Q1 Profitability Collapse**  
+   - **-$45K net profit** (Attributed to:  
+     - Marketing overspend (ROI dropped to 0.76x)  
+     - UK tax regulation changes  
+
+2. **Market Outperformance**  
+   - **France's net profit exceeded Germany's by 17%**  
+   - Achieved despite 8% lower sales volume  
+
+3. **Seasonal Concentration Risk**  
+   - **66% of annual profit** generated in Q3/Q4  
+   - Q1/Q2 consistently underperformed across all years  
 
 **Solution**: Power BI dashboard suite with 10 critical DAX measures to track:  
-
 ✔️ Real-time profitability by region  
 ✔️ Marketing spend ROI alerts  
 ✔️ Cost leakage detection  
@@ -30,7 +40,9 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
   Level 1: Report Type (Balance Sheet, P&L)  
   Level 2: Class (Trading, Operating, etc.)  
   Level 3: SubClass (Sales, COGS, Marketing)  
-  Level 4: SubClass2 (Digital Ads, Trade Shows)  
+  Level 4: SubClass2 (Digital Ads, Trade Shows)
+  Level 5: Account
+  Level 6: SubAccount
   ```  
 - **Compliance**: FASB/IFRS standards compatible with SAP/Oracle  
 
