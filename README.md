@@ -7,6 +7,7 @@
 NorthWind Traders achieved **36% sales growth in 2020** while European profitability declined. Analysis of **27,910+ GL transactions** revealed:  
 
 **Critical Financial Findings**:  
+
 1. **Q1 Profitability Collapse**  
    - **-$45K net profit** (Attributed to:  
      - Marketing overspend (ROI dropped to 0.76x)  
