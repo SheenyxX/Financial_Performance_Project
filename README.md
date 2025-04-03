@@ -49,11 +49,11 @@ Modern enterprises like NorthWind Traders organize financial data into **4 core 
 ### 3. **Dimensional Data**  
 
 #### Calendar Table  
-![Calendar_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Calender.png)  
+![Calendar_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2.3%20Calender.png)  
 - **Fiscal Periods**: 1,097 days with special flags for year-end
 - 
 #### Territory Table  
-![Territory_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/Territory.png)  
+![Territory_Table](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2.4%20Territory.png)  
 - **7 Regions**: North America (USA, Canada), Europe (UK, France, Germany), etc.  
 
 ### 4. **Relational Model**  
@@ -67,7 +67,7 @@ This enterprise-grade data architecture enables the complex analysis presented i
 
 
 ### Data Model  
-![Data Architecture](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/5%20Data%20Model.png)  
+![Data Architecture](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1.5%20Data%20Model.png)  
 *Tables*:  
 - `General Ledger` (27,910 transactions)  
 - `Chart of Accounts` (55 hierarchical accounts)  
@@ -80,7 +80,7 @@ This enterprise-grade data architecture enables the complex analysis presented i
 ## 📊 Dashboard Walkthrough  
 
 ### 1. Sales Revenue Dashboard  
-![Revenue Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1%20Dashboard%20Sales.png)  
+![Revenue Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1.1%20Dashboard%20Sales.png)  
 
 **Components**:  
 - Yearly/quarterly sales breakdown (2018–2020)
@@ -103,7 +103,7 @@ Sales_FTP = CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass] = "Sales")  // 
 ---
 
 ### 2. P&L Dashboard  
-![P&L Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/2%20Dashboard%20P%26L.png)  
+![P&L Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1.2%20Dashboard%20P%26L.png)  
 
 **Components**:  
 - Interactive matrix:
@@ -126,7 +126,7 @@ Net_Profit = CALCULATE([Total_FTP], 'Chart of Accounts'[Report] = "Profit and Lo
 ---
 
 ### 3. Profitability Deep Dive (P&L v2)  
-![Profitability Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/3%20Dashboard%20P%26L2.png)  
+![Profitability Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1.3%20Dashboard%20P%26L2.png)  
 
 **Components**:  
 - Gross Profit Margin (2020: **68.17%**) and Net Profit Margin (2020: **16.46%**) trends
@@ -149,7 +149,7 @@ Marketing_Cost_FTP = CALCULATE([Total_FTP], 'Chart of Accounts'[SubClass2] = "Ma
 ---
 
 ### 4. Cross Country Dashboard  
-![Regional Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/4%20Dashboard%20CrossCountry.png)  
+![Regional Dashboard](https://github.com/SheenyxX/Financial_Performance_Project/blob/main/1.4%20Dashboard%20CrossCountry.png)  
 
 **Components**:  
 - Line charts by country:
