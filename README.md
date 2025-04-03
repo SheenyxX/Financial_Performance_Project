@@ -8,10 +8,8 @@ NorthWind Traders achieved **36% sales growth in 2020** while European profitabi
 
 **Critical Financial Findings**:  
 
-1. **Q1 Profitability Collapse**  
-   - **-$45K net profit** (Attributed to:  
-     - Marketing overspend (ROI dropped to 0.76x)  
-     - UK tax regulation changes  
+1. **Q1 2020 Net Profit Crash**:
+   - -$45K (linked to marketing overspend and UK tax changes) 
 
 2. **Market Outperformance**  
    - **France's net profit exceeded Germany's by 17%**  
