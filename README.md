@@ -1,3 +1,6 @@
+
+[![Power BI](https://img.shields.io/badge/Power_BI-Microsoft-blue.svg)](https://powerbi.microsoft.com/)
+
 # Financial Performance Analysis: Diagnosing Profitability Gaps in European Distribution Markets  
 *Prepared for: NorthWind Traders (Multinational Distributor)*  
 
